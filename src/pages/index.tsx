@@ -1,8 +1,8 @@
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 import Cms from 'src/services/Cms';
-import Slider from 'src/components/slider';
-import Carousel from 'src/components/carousel';
-import Ad from 'src/components/ad';
+import Slider from 'src/components/Slider';
+import Carousel from 'src/components/Carousel';
+import Ad from 'src/components/Ad';
 
 import { DEFAULT_LANGUAGE, KENTICO_HARDCODED_PAGES } from '$utils/constants';
 

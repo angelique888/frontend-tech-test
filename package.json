@@ -26,6 +26,8 @@
     "react": "17",
     "react-dom": "17",
     "react-query": "^3.39.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
     "tailwind-merge": "^1.2.1"
   },
   "devDependencies": {
