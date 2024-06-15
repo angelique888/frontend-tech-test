@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "commit": "cz",
-    "dev": "APP_ENV=development next dev",
-    "build": "APP_ENV=development next build",
-    "start": "APP_ENV=development next start",
+    "dev": "cross-env APP_ENV=development next dev",
+    "build": "cross-env APP_ENV=development next build",
+    "start": "cross-env APP_ENV=development next start",
     "prepare": "husky install",
     "release": "standard-version",
     "lint": "eslint src"
@@ -39,6 +39,7 @@
     "@types/tailwindcss": "^3.0.10",
     "autoprefixer": "^10.4.7",
     "commitizen": "^4.2.4",
+    "cross-env": "^7.0.3",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
@@ -64,6 +65,9 @@
   },
   "lint-staged": {
     "package.json": "sort-package-json",
-    "**/*.{js,ts,tsx}": ["prettier --write", "eslint --cache --fix"]
+    "**/*.{js,ts,tsx}": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ]
   }
 }
